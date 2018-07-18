@@ -100,4 +100,5 @@ class ProductController extends Controller
 
         return $this->redirectToRoute('product');
     }
+
 }
