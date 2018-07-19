@@ -1,0 +1,16 @@
+footer {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  min-height: 75px;
+  padding: 15px;
+  background-color: rgba(69, 53, 45, 0.6);
+  margin-top: 60px;
+  & > * {
+    color: #fff;
+    font-size: 10px;
+  }
+  address, p {
+    margin: 0;
+  }
+}

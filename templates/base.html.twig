@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="stylesheet" href="{{ asset('build/app.css') }}">
-        {% block stylesheets %}{% endblock %}
-    </head>
-    <body>
-        {% block body %}{% endblock %}
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    <link rel="stylesheet" href="{{ asset('build/app.css') }}">
+    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/8ba9a1bfbc/UntitledProject/style.css">
+    {% block stylesheets %}{% endblock %}
+</head>
+<body>
+<header>
+    <div class="c-nav">
+        <a href="/registration" class="c-nav__item">{% trans %}Registration{% endtrans %}</a>
+        <a href="/login" class="c-nav__item">{% trans %}Login{% endtrans %}</a>
+    </div>
+</header>
+{% block body %}{% endblock %}
 
-        <script src="{{ asset('build/app.js') }}"></script>
-        {% block javascripts %}{% endblock %}
-    </body>
+<footer>
+    <address>
+        <p>Science Avenue 60A, Kiev</p>
+    </address>
+    <p>&copy; created by "Amsterdam Cats Club"</p>
+</footer>
+
+<script src="{{ asset('build/app.js') }}"></script>
+{% block javascripts %}{% endblock %}
+</body>
 </html>

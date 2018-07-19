@@ -1,0 +1,15 @@
+.c-nav {
+  display: flex;
+  &__item {
+    color: #fff;
+    font-weight: bold;
+    &:not(:first-child) {
+      margin-left: 10px;
+    }
+
+    &:hover {
+      color: $app-color;
+      text-decoration: none;
+    }
+  }
+}
