@@ -1,8 +1,10 @@
 {% extends 'base.html.twig' %}
 {% block body %}
-    <a href="/product">List products</a>
+    <div class="container">
+        <a href="/product" class="c-button c-button__breadcrumbs">List products</a>
 
-    {{ form_start(form, {'attr': {'class': 'product_form'}}) }}
-    {{ form_widget(form) }}
-    {{ form_end(form) }}
+        {{ form_start(form, {'attr': {'class': 'product_form'}}) }}
+        {{ form_widget(form) }}
+        {{ form_end(form) }}
+    </div>
 {% endblock %}

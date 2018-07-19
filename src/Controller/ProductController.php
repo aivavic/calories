@@ -101,4 +101,11 @@ class ProductController extends Controller
         return $this->redirectToRoute('product');
     }
 
+    /**
+     * @return \Symfony\Component\HttpFoundation\Response
+     * @Route("/registration", name="registration")
+     */
+    public function registration() {
+        return $this->render('product/registration.html.twig', []);
+    }
 }

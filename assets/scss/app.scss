@@ -1,8 +1,13 @@
-
 @import "~bootstrap/scss/bootstrap";
-html {
-  body {
-    background-color: blue;
-  }
+@import 'utils/colors';
+@import 'components/module';
+@import 'modules/module';
+@import "product.scss";
+
+body {
+  background: url("../img/3.jpg");
 }
-@import "_product.scss";
+
+.container {
+  background-color: #ffffffb3;
+}

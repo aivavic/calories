@@ -1,0 +1,26 @@
+.c-button {
+  width: 100%;
+  margin: 20px 0;
+  border: 3px solid $app-color;
+  font-weight: bold;
+  background-color: $app-color;
+  color: #fff;
+  &:hover {
+    background-color: transparent;
+    border: 3px solid darken($app-color, 20%);
+    color: darken($app-color, 10%);
+  }
+
+  &__breadcrumbs {
+    display: inline-block;
+    width: auto;
+    padding: 10px;
+    background-color: #fff;
+    color: $app-color;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    &:hover {
+      background-color: lighten($app-color, 15%);
+    }
+  }
+}
