@@ -22,6 +22,6 @@ class DefaultController extends Controller
      * @Route("/registration", name="registration")
      */
     public function registration() {
-        return $this->render('product/registration.html.twig', []);
+        return $this->render('default/registration.html.twig', []);
     }
 }
